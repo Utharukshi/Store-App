@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storeapplication.FXMLDocumentController">
+   <children>
+      <Label fx:id="label" layoutX="142.0" layoutY="24.0" text="Book Store Management System">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="184.0" text="Book Name" />
+      <Label layoutX="30.0" layoutY="251.0" text="Author" />
+      <Label layoutX="30.0" layoutY="311.0" text="Quantity" />
+      <TextField fx:id="textname" layoutX="113.0" layoutY="180.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="txtauthor" layoutX="113.0" layoutY="247.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="txtqty" layoutX="113.0" layoutY="307.0" prefHeight="25.0" prefWidth="230.0" />
+      
+      
+      <Button fx:id="btnInsert" layoutX="27.0" layoutY="390.0" mnemonicParsing="false" onAction="#Insert" prefHeight="25.0" prefWidth="95.0" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="142.0" layoutY="390.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="106.0" text="Update" />
+      <Button fx:id="btnDelete" layoutX="263.0" layoutY="390.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="95.0" text="Delete" />
+      <Button fx:id="btnClear" layoutX="142.0" layoutY="459.0" mnemonicParsing="false" onAction="#Clear" prefHeight="25.0" prefWidth="106.0" text="Clear" />
+      <TableView id="table1" fx:id="table" layoutX="385.0" layoutY="111.0" prefHeight="373.0" prefWidth="355.0">
+         <columns>
+            <TableColumn fx:id="IdColumn" prefWidth="75.0" text="Book ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="97.0" text="Book Name" />
+            <TableColumn fx:id="authorColumn" prefWidth="87.0" text="Author" />
+            <TableColumn fx:id="qtyColumn" prefWidth="95.0" text="Quantity" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
